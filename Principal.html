@@ -86,22 +86,51 @@
     }
 
     .whatsapp-btn {
-  position: fixed;   /* se queda fijo en la pantalla */
-  top: 20px;         /* distancia desde arriba */
-  right: 20px;       /* distancia desde la derecha */
-  z-index: 1000;     /* asegura que quede encima de todo */
+
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    
+    transition: all 0.3s ease;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    gap: 10px;
+
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+
+    padding: 10px 15px;
+    border-radius: 50px;
+
+    z-index: 1000;
 }
 
 .whatsapp-btn img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #00c851;
-  transition: transform 0.3s;
+    width: 50px;
+    height: 50px;
 }
+
 
 .whatsapp-btn img:hover {
   transform: scale(1.1);
+}
+
+.whatsapp-btn:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow:
+        0 0 15px rgba(37,211,102,0.6),
+        0 0 30px rgba(37,211,102,0.4),
+        0 0 45px rgba(37,211,102,0.2);
 }
 
 .categorias{
@@ -140,6 +169,7 @@
 
   <!-- Enlace de WhatsApp -->
 <a href="https://wa.me/5217224349256" target="_blank" class="whatsapp-btn">
+  <span>WhatsApp</span>
   <img src="icons8-whatsapp-94.png" alt="WhatsApp" />
 </a>
 
