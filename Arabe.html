@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Perfumes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Segoe+UI&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #11212D; /* fondo oscuro */
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #253745;
+    }
+
+    .titulo {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5em;
+      letter-spacing: 3px;
+      font-weight: bold;
+      color: #ffffff; /* sin brillos */
+    }
+
+    .catalogo {
+      display: flex;
+      flex-wrap: wrap; /* se acomodan en filas */
+      justify-content: center;
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .perfume {
+      background: #1a1f2e; /* tarjeta oscura */
+      border: 1px solid #2a3a5f;
+      border-radius: 15px;
+      width: 280px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+    }
+
+    .perfume:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 35px rgba(0,198,255,0.3);
+    }
+
+    .perfume img {
+  width: 100%;
+  height: 300px; /* altura fija para todas las imágenes */
+  object-fit: contain; /* mantiene proporción del frasco */
+  border-bottom: 2px solid #00c6ff;
+  background-color: #0b0f1a; /* fondo oscuro detrás si sobra espacio */
+  
+}
+
+    .info {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .info h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .reseña {
+      font-size: 0.95em;
+      color: #00c6ff;
+      margin: 12px 0;
+      font-style: italic;
+    }
+
+    .precio {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #ffffff;
+      margin-top: 12px;
+    }
+
+    .whatsapp-btn {
+  position: fixed;   /* se queda fijo en la pantalla */
+  top: 20px;         /* distancia desde arriba */
+  right: 20px;       /* distancia desde la derecha */
+  z-index: 1000;     /* asegura que quede encima de todo */
+}
+
+.whatsapp-btn img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00c851;
+  transition: transform 0.3s;
+}
+
+.whatsapp-btn img:hover {
+  transform: scale(1.1);
+}
+
+.categorias{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.categoria{
+    text-decoration: none;
+    padding: 12px 30px;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    background: rgba(255,255,255,0.05);
+    transition: 0.3s;
+}
+
+.categoria:hover{
+    background: #000727;
+    color: white;
+}
+
+.activa{
+    background: #000727;
+    color: white;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1 class="titulo">Catálogo de Perfumes Caballero</h1>
+  </header>
+
+  <!-- Enlace de WhatsApp -->
+<a href="https://wa.me/5217224349256" target="_blank" class="whatsapp-btn">
+  <img src="icons8-whatsapp-94.png" alt="WhatsApp" />
+</a>
+<div class="categorias">
+    <a href="Principal.html" class="categoria">DISEÑADOR</a>
+    <a href="Arabe.html" class="categoria activa">ÁRABE</a>
+</div>
+ <section class="catalogo">
+ <div class="perfume">
+      <img src="HAWAS_IMG/HAWAS_ICE_100ML-removebg-preview.png" alt="Perfume 2">
+      <div class="info">
+        <h3>Hawas Ice</h3>
+        <p class="reseña">Notas de Salida son manzana, limón italiano.Notas de Corazón son ciruela, flor de azahar del naranjo y cardamomo</p>
+        <p class="precio">$920 MXN</p>
+      </div>
+    </div>
+
+    <div class="perfume">
+      <img src="HAWAS_IMG/HAWAS_MALIBÚ-removebg-preview.png" alt="Perfume 2">
+      <div class="info">
+        <h3>Hawas Malibú</h3>
+        <p class="reseña">Las Notas de Salida son piña, naranja y toronja (pomelo),las Notas de Corazón son ámbar, raíz de lirio y lavanda</p>
+        <p class="precio">$980 MXN</p>
+      </div>
+    </div>
+
+    <div class="perfume">
+      <img src="HAWAS_IMG/HAWAS_FOR_HIM-removebg-preview.png" alt="Perfume 2">
+      <div class="info">
+        <h3>Hawas For Him</h3>
+        <p class="reseña">Fragancia fresca y moderna con notas acuáticas, cítricas y un fondo amaderado. Su aroma es limpio, energético y perfecto para el uso diario.</p>
+        <p class="precio">$850 MXN</p>
+      </div>
+    </div>
+
+    <div class="perfume">
+      <img src="HAWAS_IMG/HAWAS_TROPICAL-removebg-preview.png" alt="Perfume 2">
+      <div class="info">
+        <h3>Hawas Tropical</h3>
+        <p class="reseña">Una mezcla vibrante de frutas exóticas y acordes frescos que transmite una sensación tropical, alegre y refrescante.</p>
+        <p class="precio">$950 MXN</p>
+      </div>
+    </div>
+
+    <div class="perfume">
+      <img src="HAWAS_IMG/HAWAS_VERDE-removebg-preview.png" alt="Perfume 2">
+      <div class="info">
+        <h3>Hawas Verde</h3>
+        <p class="reseña">Comienza con notas verdes y cítricas que transmiten es
+      </div>
+    </div>
+
+    <div class="perfume">
+      <img src="HAWAS_IMG/HAWAS_KOBRA-removebg-preview.png" alt="Perfume 2">
+      <div class="info">
+        <h3>Hawas Kobra</h3>
+        <p class="reseña">Su salida especiada y ligeramente dulce crea una presencia intensa desde el primer instante. El corazón combina notas orientales y aromáticas, culminando en un fondo profundo de maderas, ámbar y almizcle.</p>
+        <p class="precio">$850 MXN</p>
+      </div>
+    </div>
+
+    <div class="perfume">
+      <img src="HAWAS_IMG/HAWAS_ATLANTIS.png" alt="Perfume 2">
+      <div class="info">
+        <h3>Hawas Atlantis</h3>
+        <p class="reseña">Inicia con notas marinas y cítricos refrescantes que evocan la brisa oceánica. El corazón desarrolla acordes acuáticos y aromáticos, mientras que el fondo amaderado y almizclado brinda una sensación limpia y duradera</p>
+        <p class="precio">$950 MXN</p>
+      </div>
+    </div>
+ </section>
+</body>
+</html>
